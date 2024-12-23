@@ -27,4 +27,9 @@
 		"node-fetch": "^3.3.2",
 		"svelte-icons": "^2.1.0"
 	}
+    , 
+
+    "engines": {
+  "node": ">=18 <21"
+}
 }
