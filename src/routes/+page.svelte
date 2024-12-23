@@ -1,3 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-<p></p>
+<script>
+    export let data; 
+
+    let url = data.imgUrl;
+
+
+    
+</script>
+{#if url}
+<div class=''><h1>Welcome to This project where I try to learn how to build a SPA with SvelteKit</h1>
+    <img src={url} alt="Random photograph" class="my-4 h-[calc(100vh-14vh)] w-screen  overflow-hidden" /></div>
+{:else}
+    <p>No image found!</p>
+{/if}
+
+

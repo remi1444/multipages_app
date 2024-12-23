@@ -15,8 +15,10 @@ export async function load() {
 
         async function fetchRandomImage() {
                 try {
+                        const width = 5000;
+                        const height = 5000;
                         const response = await fetch(
-                                `https://api.api-ninjas.com/v1/randomimage?category=${category}`,
+                                `https://api.api-ninjas.com/v1/randomimage?category=${category}&width=${width}&height=${height}`,
                                 {
                                         headers: {
                                                 "X-Api-Key":

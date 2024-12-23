@@ -3,12 +3,11 @@
 
     let url = data.imgUrl;
 
-    console.log(url);
+
     
 </script>
-<h2>{url}</h2>
 {#if url}
-    <img src={url} alt="Random photograph" class="my-4" />
+    <img src={url} alt="Random photograph" class="my-4 h-[calc(100vh-2vh)] w-screen" />
 {:else}
     <p>No image found!</p>
 {/if}
